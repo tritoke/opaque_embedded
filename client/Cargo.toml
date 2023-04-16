@@ -1,0 +1,18 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serialport = "4.2"
+anyhow = "1.0"
+clap = { version = "4.1", features = ["derive"] }
+
+rand_core = { version = "0.6.4", features = ["getrandom"] }
+serde = "1.0"
+postcard = { version = "1", features = ["use-std"] }
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
+opaque-ke = { version = "3.0.0-pre.2", features = ["std"] }
